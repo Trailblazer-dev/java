@@ -1,13 +1,11 @@
-public class Box {
+class Box {
     // Data members
-    double length;
-    double width;
+    double length,width;
     double height;
 
     // Constructor to initialize the Box object
     public Box(double length, double width, double height) {
-        this.length = length;
-        this.width = width;
+        this.length = length;this.width = width;
         this.height = height;
     }
 
@@ -22,11 +20,10 @@ public class Box {
         Box box2 = new Box(4.0, 4.0, 4.0);
 
         // Calculate and display the volume of the first box using the method
-        double volume1 = box1.calculateVolume();
-        System.out.println("Volume of Box 1: " + volume1);
+     
+        System.out.println("Volume of Box 1: " + box1.calculateVolume());
 
         // Calculate and display the volume of the second box using the method
-        double volume2 = box2.calculateVolume();
-        System.out.println("Volume of Box 2: " + volume2);
+        System.out.println("Volume of Box 2: " + box2.calculateVolume());
     }
 }
