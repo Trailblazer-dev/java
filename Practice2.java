@@ -1,17 +1,19 @@
-class Student{
+public class Practice2 {
+    public static void main(String[]args){
+        StudentDetails stud = new StudentDetails(20,"Mary");
+        stud.displayRecord();
+        //when calling a void method there is no need to calling it inside the sout since the method has already a sout keyword
+        
+    }
+}
+class StudentDetails{
     int age;
     String name;
-    Student(int a,String n){
+    StudentDetails(int a,String n){
         age = a;
         name = n;
     }
     void displayRecord(){
         System.out.println(age+" " + name);
-    }
-}
-public class Practice2 {
-    public static void main(String[]args){
-        Student stud = new Student(20,"Mary");
-        stud.displayRecord();
     }
 }

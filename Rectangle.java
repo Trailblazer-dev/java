@@ -1,19 +1,19 @@
-class Practice{
-    int length;
-    int width;
-    void insertRecords(int l, int w){
+public class Rectangle {
+     public static  void main(String[]args){
+        Measurements rec = new Measurements();
+        rec.Area(14, 15);
+        rec.displayArea();
+    }
+    
+}
+class Measurements{
+    private int length;
+    private int width;
+    void Area(int l, int w){
         length = l;
         width = w;
     }
     void displayArea(){
         System.out.println("Area = " + length* width);
     }
-}
-public class Rectangle {
-     public static  void main(String[]args){
-        Practice rec = new Practice();
-        rec.insertRecords(14, 15);
-        rec.displayArea();
-    }
-    
 }
